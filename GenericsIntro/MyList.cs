@@ -22,6 +22,15 @@ namespace GenericsIntro
             }
             items[items.Length - 1] = item;
         }
+        public int Count
+        {
+            get { return items.Length; } // Uzunluğunu Alır
+        }
+
+        public T[] Items
+        {
+            get { return items; } // T Elemanları Okur
+        }
  
     }
 }

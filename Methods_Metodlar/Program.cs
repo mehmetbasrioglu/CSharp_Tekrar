@@ -4,7 +4,7 @@ namespace Methods_Metodlar
 {
     class Program
     {  
-        static void Main(string[] args)
+        static void Main(string[] args) // Static void method
         {
             Urun elma = new Urun();
             elma.urunAdi = "Elma";
