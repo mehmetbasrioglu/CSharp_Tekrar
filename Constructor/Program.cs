@@ -11,8 +11,8 @@ namespace Constructor
         static void Main(string[] args)
         {
             Customer customer = new Customer();
-            Customer customer2 = new Customer(2, "Mehmet", "Basrioğlu");
-            Console.WriteLine(customer2.FirstName);
+            Customer customer2 = new Customer(2, "Mehmet", "Basrioğlu","1234651241");
+            Console.WriteLine(customer2.FirstName + " " +customer.LastName);
 
             Console.ReadLine();
         }
@@ -35,10 +35,23 @@ namespace Constructor
             //Console.WriteLine("Default Constructor");
         }
 
+        public Customer(int id, string firstname, string lastname,string tckimlik)
+        {
+            Id = id;
+            FirstName = firstname;
+            LastName = lastname;
+            TcKimlik = tckimlik;
+
+            //Console.WriteLine("Default Constructor");
+        }
+
+
+
         //Prop types
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public string TcKimlik { get; set; }
 
     }
 }
