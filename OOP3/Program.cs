@@ -16,7 +16,7 @@ namespace OOP3
 
 
 
-            ICreditBaseManager konukKredisi = new HouseCreditManager(); //Interfaceler referans numarasını tutabilir.
+            ICreditBaseManager konutKredisi = new HouseCreditManager(); //Interfaceler referans numarasını tutabilir.
             ICreditBaseManager ihtiyacKredisi = new PersonelCreditManager();
             ICreditBaseManager esnafKredisi = new ArtisanCreditManagar();
 
@@ -27,7 +27,7 @@ namespace OOP3
             ApplicationManager basvuruFormu = new ApplicationManager();
             basvuruFormu.DoApplication(esnafKredisi,new List<ILogger> { veritabani, smsLogger }); // Hangi Krediyi Gönderirsem Onu Çalıştırır && Hangi Log Gönderirsem Onu Çalıştırır
 
-            List<ICreditBaseManager> krediler = new List<ICreditBaseManager>() {konukKredisi, ihtiyacKredisi };
+            List<ICreditBaseManager> krediler = new List<ICreditBaseManager>() { konutKredisi, ihtiyacKredisi };
             //basvuruFormu.CreditFrontInfo(krediler); // Kredi Ön Bilgilendirmesi
 
 

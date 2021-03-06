@@ -25,6 +25,7 @@ namespace OOP2
             // SO L ID
 
             Customer musteri3 = new GercekMusteri();// Müşteri(Customer) new GercekMüşteri var ise referans numarasını tutuyordur
+            
             Customer musteri4 = new TuzelMusteri();
 
             CustomerManager musteriManager = new CustomerManager();
